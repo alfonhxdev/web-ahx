@@ -1,0 +1,792 @@
+--primary-color: rgb(171, 117, 0);
+    --primary-color-hover: rgb(136, 93, 0);
+    --primary-color-active: rgb(190, 130, 0);
+    --secondary-color: rgb(53, 53, 53);
+    --secondary-color-hover: rgb(95, 95, 95);
+    --opaque-color: rgb(146, 146, 146);
+    --white-color: #fff;
+
+    /*nav colors*/
+    --nav-background-color: rgb(29, 29, 29);
+
+    /*Responsive Widths*/
+    --width-responsive: 350px;
+}
+
+body {
+    font-family: "Nunito";
+}
+
+/*===== BEGIN  Hero Style =====*/
+.hero {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: linear-gradient(
+            rgba(53, 53, 53, 0.8) 25%,
+            rgba(171, 117, 0, 0.95) 25%
+        ),
+        url("https://images.pexels.com/photos/414628/pexels-photo-414628.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.hero .hero-avatar {
+    display: block;
+    position: relative;
+    top: 80px;
+    width: 150px;
+    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    right: 0px;
+    left: 0px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    /* vertical-align: middle; */
+    border: 6px solid var(--primary-color);
+}
+
+.hero .hero-avatar img {
+    width: 165px;
+    height: auto;
+    margin-left: -20px;
+    margin-top: -10px;
+}
+
+.hero .hero-info {
+    position: relative;
+    width: 425px;
+    padding: 0 8px 22px;
+    text-align: center;
+    top: 105px;
+    margin: 0 auto;
+}
+
+.hero .typewritting {
+    width: auto;
+}
+
+.hero .typewritting h1 {
+    color: var(--white-color);
+    font-size: 2.7em;
+    overflow: hidden;
+    border-right: 0.15em solid var(--white-color);
+    white-space: nowrap;
+    margin: 0 auto;
+    word-spacing: 0.5em;
+
+    -webkit-animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.hero h3 {
+    font-size: 1.4em;
+    color: var(--secondary-color);
+    margin: 5px 5px;
+}
+
+.hero p {
+    width: auto;
+    font-size: 13px;
+    position: relative;
+    text-align: justify;
+    margin: 20px auto;
+    color: #e3e3e3;
+}
+.hero p.hastag {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+.hero .row {
+    display: block;
+    position: relative;
+}
+
+.hero .btn-hero:nth-of-type(1) {
+    background: var(--secondary-color);
+    color: var(--white);
+    margin-right: 5px;
+}
+
+.hero .btn-hero:nth-of-type(1):hover {
+    background: var(--secondary-color-hover);
+    color: var(--white);
+}
+
+.hero .btn-hero:nth-of-type(2) {
+    background: var(--primary-color-active);
+    color: var(--white);
+    margin-right: 5px;
+}
+
+.hero .btn-hero:nth-of-type(2):hover {
+    background: rgb(234, 160, 0);
+    color: var(--white);
+    margin-right: 5px;
+}
+
+/* Social Networks Bar */
+.social {
+    position: fixed;
+    left: 0;
+    top: 200px;
+    z-index: 1;
+}
+
+.social ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.social ul li a {
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: all 500ms ease;
+    border-radius: 0 20px 20px 0;
+}
+
+.social ul li .icon-facebook {
+    background: #3b5998;
+}
+
+.social ul li .icon-linkedin {
+    background: #0e76ab;
+}
+.social ul li .icon-instagram {
+    background: #f77737;
+}
+.social ul li .icon-mail {
+    background: #666666;
+}
+
+.social ul li a:hover {
+    background: var(--white-color);
+    padding: 10px 30px;
+    color: var(--secondary-color);
+    border-radius: 0 20px 20p 0;
+}
+
+/* Config Panel */
+.config-panel {
+    background: var(--secondary-color);
+    height: auto;
+    width: 150px;
+    border-radius: 25px 0 0 25px;
+    position: fixed;
+    right: -150px;
+    top: 15px;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.config-panel .panel-inner {
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    color: var(--white-color);
+}
+
+.config-panel .panel-inner h4 {
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.config-panel .panel-inner .config-button {
+    background: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 30px;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px 0 0 10px;
+    transition: all 0.5s;
+}
+
+.config-panel .panel-inner .config-button:hover {
+    background: var(--secondary-color-hover);
+    cursor: pointer;
+}
+
+.config-panel .chooseLanguage {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2px;
+}
+
+.config-panel .chooseLanguage li {
+    margin-left: 5px;
+}
+
+.config-panel .chooseLanguage li a:hover {
+    height: 65%;
+}
+
+.responsive-button {
+    position: relative;
+    width: auto;
+    top: 14px;
+    font-size: 24px;
+    text-align: end;
+    right: 11px;
+    cursor: pointer;
+    color: var(--white-color);
+    display: none;
+}
+
+/* Button Switch Dark Mode or White Mode */
+.switch-button {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch-button input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch-button .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+.switch-button .slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--white-color);
+    transition: 0.4s;
+}
+
+.switch-button input:checked + .slider {
+    background-color: #2196f3;
+}
+
+.switch-button input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+.switch-button input:checked + .slider::before {
+    transform: translateX(26px);
+}
+.switch-button .slider.round {
+    border-radius: 34px;
+}
+
+.switch-button .slider.round:before {
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 650px) {
+    .responsive-button {
+        display: block;
+    }
+}
+
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@-webkit-keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--white-color);
+    }
+}
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--white-color);
+    }
+}
+
+/*===== END  Hero Style =====*/
+
+/*===== BEGIN Navbar Style =====*/
+.nav {
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+    background: var(--nav-background-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.nav a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.nav a:hover {
+    color: var(--primary-color-active);
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.nav a.active {
+    color: var(--primary-color-active);
+}
+
+.nav #btn-close-menu {
+    display: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+@media only screen and (max-width: 650px) {
+    .hero {
+        margin-left: 0px;
+    }
+    .nav {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0px;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .nav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .nav a:hover {
+        color: var(--primary-color-active);
+        transition: all 0.5s;
+    }
+    .hero {
+        transition: margin-left 0.5s;
+        padding: 16px;
+    }
+}
+
+/*===== END Navbar Style =====*/
+.aboutMe {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    background: var(--secondary-color);
+}
+
+.aboutMe .container {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.aboutMe h1 {
+    margin: 0;
+    text-align: center;
+    font-weight: 50;
+    font-size: 40px;
+    color: var(--white-color);
+}
+
+.aboutMe .container p {
+    color: var(--white-color);
+    text-align: justify;
+    font-weight: normal;
+    font-size: 14px;
+}
+.aboutMe .container h1 {
+    text-align: center;
+    font-weight: 100;
+    padding-top: 20px;
+    font-size: 35px;
+    padding-bottom: 40px;
+}
+.aboutMe .container h3 {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+.aboutMe .container h3::before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 5%;
+    background: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.aboutMe .container .list-aboutme-ol {
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    padding: 0;
+    margin-bottom: 4em;
+}
+
+.aboutMe .container .list-aboutme-ol li {
+    position: relative;
+    display: block;
+    padding: 0.4em 0.4em 0.4em 0.6em;
+    margin: 0.5em 0;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border-radius: 0.3em;
+    transition: 0.5s all ease-in-out;
+    font-size: 14px;
+}
+.aboutMe .container .list-aboutme-ol li:hover {
+    background: var(--primary-color-active);
+    color: var(--white-color);
+    padding: 0.4em 0.4em 0.4em 1em;
+}
+.aboutMe .container .list-aboutme-ol li::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 64%;
+    background: var(--primary-color);
+    position: absolute;
+    left: 0;
+    border-radius: 50px;
+}
+
+.aboutMe .container .img-content {
+    text-align: center;
+}
+
+.aboutMe .container .img-content img {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+.aboutMe .container p a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.aboutMe .container p a:hover {
+    text-decoration: underline;
+    color: var(--primary-color-active);
+}
+.aboutMe .container .card-section {
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: center;
+    flex-direction: row;
+}
+.aboutMe .container .card {
+    width: 15em;
+    background: var(--secondary-color-hover);
+    color: var(--white-color);
+}
+
+.aboutMe .container .card .card-title {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 700;
+}
+.aboutMe .container .card .card-header {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.aboutMe .container .card .card-header i {
+    font-size: 30px;
+    text-align: center;
+    margin: 8px auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.aboutMe .container .card .card-header i:hover {
+    background: var(--white-color);
+    border-radius: 20%;
+    font-size: 40px;
+    text-align: center;
+    margin: 8px auto;
+    padding: 5px;
+}
+
+.aboutMe .container .container-timeline {
+}
+
+.aboutMe .container .container-timeline .timeline {
+    counter-reset: year 2018;
+    position: relative;
+}
+
+.aboutMe .container .container-timeline .timeline li {
+    list-style: none;
+    float: left;
+    width: 30%;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.aboutMe .container .container-timeline .timeline li::before {
+    counter-increment: year;
+    content: counter(year);
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--white-color);
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto 10px auto;
+    background: #f1f1f1;
+    color: #000;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.aboutMe .container .container-timeline .timeline li::after {
+    content: "";
+    position: absolute;
+    width: 84%;
+    height: 1px;
+    background-color: var(--primary-color-active);
+    top: 25px;
+    left: -42%;
+    /* z-index: ; */
+    transition: all ease-in-out 0.3s;
+}
+
+.aboutMe .container .container-timeline .timeline li:first-child::after {
+    content: none;
+}
+
+.aboutMe .container .container-timeline .timeline li.active {
+    color: var(--primary-color);
+}
+
+.aboutMe .container .container-timeline .timeline li.active::before {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+/*===== BEGIN AboutMe Style =====*/
+
+/*===== END AboutMe Style =====*/
+
+/*===== BEGIN AboutMe Style =====*/
+
+.phrase {
+    background-image: linear-gradient(
+            rgba(53, 53, 53, 0.8) 20%,
+            rgba(107, 107, 107, 0.8) 60%
+        ),
+        url(/images/portfolio.jpg?f490d53bda173d3dda540ed3c84b1e1c);
+}
+
+.phrase.parallax {
+    height: 20em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.phrase .text {
+    padding-top: 90px;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+    font-style: italic;
+    color: white;
+    /* text-shadow: 5px 4px 9px black; */
+}
+
+.phrase .author {
+    text-align: right;
+    padding-top: 18px;
+    padding-right: 100px;
+    color: #fff;
+    font-size: 23px;
+}
+
+/*===== END AboutMe Style =====*/
+
+/*===== BEGIN Portfolio Style =====*/
+
+.portfolio {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+
+    background: var(--primary-color);
+}
+
+.portfolio .container {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.portfolio h1 {
+    margin: 0;
+    text-align: center;
+    font-weight: 50;
+    font-size: 40px;
+    color: var(--white-color);
+}
+
+/*Products and Projects */
+.portfolio .container-product {
+    background-color: var(--secondary-color);
+    padding: 0;
+    overflow: hidden;
+    max-width: 200px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.portfolio .container-product article {
+    padding: 10%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.portfolio .container-product h2 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 22px;
+    border-bottom: #fff solid 1px;
+}
+
+.portfolio .container-product h3 {
+    font-weight: 300;
+    color: #fff;
+    font-size: 12px;
+}
+
+.portfolio .container-product img {
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    transition: all 4s ease;
+}
+
+.portfolio .container-product .show-more {
+    background-color: #feb66c;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0;
+    transform: translate(0px, 70px);
+    transition: all 0.2s ease-in-out;
+}
+
+.portfolio .container-product span {
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    top: 0px;
+}
+
+.portfolio .container-product:hover {
+    cursor: pointer;
+}
+
+.portfolio .container-product:hover img {
+    opacity: 0.1;
+    transform: scale(1.5);
+}
+
+.portfolio .container-product:hover article {
+    transform: translate(2px, -69px);
+}
+
+.portfolio .container-product:hover .show-more {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+/*===== END Portfolio Style =====*/
+/* @import "./owl-carousel/owl.carousel.scss"; */ /* <=== This is the main style of the page. */
