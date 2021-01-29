@@ -10,18 +10,6 @@
                 <p data-aos="zoom-in" data-aos-duration="1000">{{__('about.section1.description3')}}</p>
                 <br>
 
-                <!-- <h3>Cualidades</h3>
-                <div class="list-aboutme">
-                    <ol class="list-aboutme-ol">
-                        <li>Trabajo en Equipo</li>
-                        <li>Creatividad</li>
-                        <li>Adaptabilidad a Cambios</li>
-                        <li>Autodidactimo</li>
-                        <li>Empatía</li>
-                        <li>Visión</li>
-
-                    </ol>
-                </div> -->
             </div>
             <div data-aos="flip-right" data-aos-duration="2000" class="col-md-6 pl-6 img-content">
                 <img src="https://images.pexels.com/photos/3201585/pexels-photo-3201585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="" alt="">
@@ -31,7 +19,7 @@
 
         <div class="row">
             <div class="col-md-12 col-sm-12 pr-2">
-                <h3 data-aos="zoom-in" data-aos-duration="1000">¿Que es lo que hago?</h3>
+                <h3 data-aos="zoom-in" data-aos-duration="1000">{{__('about.section2.title')}}</h3>
                 <p data-aos="zoom-in" data-aos-duration="1000">Aquí debajo tienes una pequeña reseña sobre que es lo que hago, mis habilidades técnicas, conjunto de tecnologías que manejo y uso. ¿Quieres encontrar más detalles acerca de mi experiencia? Da una revisada a mi <a href="">Curriculum Vitae en Linea</a> y <a href="">Portafolio de Proyectos</a> </p>
                 <br>
 

@@ -3,9 +3,15 @@
     <section id="hero">
         <div class="responsive-button" id="btn-menu-responsive"> <i class="fas fa-bars"></i> </div>
 
+        <!-- <div class="hero-logo">
+            <img src="{{URL::asset('/img/logo/Logo_web.png')}}" alt="">
+        </div> -->
+
         <div data-aos="fade-down" class="hero-avatar">
             <img loading="lazy" src="https://media-exp1.licdn.com/dms/image/C5603AQGcOuCeuyddBw/profile-displayphoto-shrink_200_200/0/1603293518674?e=1614211200&v=beta&t=sO0iTqFsqq1OAlxTmRTkIuGxBYidwxvAKxBPqfPWZzI" alt="">
         </div>
+
+
 
         <div class="hero-info">
 

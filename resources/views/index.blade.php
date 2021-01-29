@@ -9,10 +9,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" type="text/css" href="{{URL::asset('css/app.css')}}" />
-
-
 
 </head>
 
@@ -23,7 +20,9 @@
     <!-- END Hero  -->
 
     <!-- BEGIN Navbar  -->
-    @include('navbar')
+    <nav>
+        @include('navbar')
+    </nav>
     <!-- END Hero  -->
 
     <!-- BEGIN About  -->
@@ -44,26 +43,23 @@
     </div>
     <!-- END Portfolio  -->
 
-
     <!-- BEGIN Contact  -->
     <div class="content lozad">
-
+        @include('contact')
     </div>
     <!-- END Contact  -->
 
-
-
+    <footer>
+        @include('footer')
+    </footer>
 
     @include('modals')
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script> -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    <!-- <script src="{{URL::asset('js/owl-carousel/owl.carousel.js')}}"></script> -->
     <script src="{{URL::asset('js/app.js')}}"></script>
 
+    @env('local')
+    <script src="http://localhost:35729/livereload.js"></script>
+    @endenv
 </body>
 
 </html>

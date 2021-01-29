@@ -1,4 +1,5 @@
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
+var LiveRealoadPlugin = require("webpack-livereload-plugin");
 
 /*
  |--------------------------------------------------------------------------
@@ -10,8 +11,15 @@ const mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
+mix.webpackConfig({
+    plugins: [new LiveRealoadPlugin()]
+});
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
+mix.js("resources/js/app.js", "public/js")
+    .postCss("resources/css/app.css", "public/css", [
         //
-    ]);
+    ])
+    .sourceMaps()
+    .autoload({
+        jquery: ["$", "window.jQuery", "jQuery"] // Adding jquery
+    });
