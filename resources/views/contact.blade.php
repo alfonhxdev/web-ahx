@@ -1,9 +1,9 @@
 <section id="contact" class="contact">
     <div class="container">
         <h1 data-aos="zoom-in-up"> <i class="fas fa-address-book"></i> Contactame</h1>
-        <p>Si tienes alguna pregunta, comentario o deseas ponerte en contacto conmigo, ¡Contactame!</p>
+        <p data-aos="zoom-in-up">Si tienes alguna pregunta, comentario o deseas ponerte en contacto conmigo, ¡Contactame!</p>
 
-        <div class="container">
+        <div data-aos="zoom-in-up" class="container">
             <div class="form">
                 <div class="row">
                     <div class="col-sm-4">

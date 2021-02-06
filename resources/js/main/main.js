@@ -1,61 +1,15 @@
-import "particles.js/particles";
+import { SessionManager } from "../Session/SessionManager";
 
-const bootstrap = require("bootstrap");
-const Aos = require("aos");
-const lozad = require("lozad");
-const particles = window.particlesJS;
+import { PrincipalManager } from "../PrincipalPage/PrincipalManager";
 
-const observer = lozad(".lozad");
+/**
+ * @author hxa.dev
+ */
 
-$("#slider").owlCarousel({
-    margin: 15,
-    autoWidth: false,
-    nav: true,
-    loop: true,
-    items: 4,
-    navText: [
-        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-    ]
-});
+const session = SessionManager().newInstance();
+const page = PrincipalManager();
 
-$(".config-button").on("click", function(ev) {
-    if ($(this).attr("state") === "OFF") {
-        $(".config-panel").css({
-            right: 0
-        });
-        $(this).attr("state", "ON");
-    } else {
-        $(".config-panel").css({
-            right: -150
-        });
-        $(this).attr("state", "OFF");
-    }
-});
-
-var navbar = document.querySelector(".nav");
-var sticky = navbar.offsetTop;
-
-function onScrollDocument() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-    } else {
-        navbar.classList.remove("sticky");
-    }
-}
-
-// Events
-window.onscroll = function() {
-    onScrollDocument();
-};
-
-// Init the Lazy Loading observer
-observer.observe();
-
-// Init the AOS script
-Aos.init();
-
-// Init Particles JS
-particles.load("particles-js", "particles.json", function() {
-    console.log("Particles Js Initialized");
-});
+/**
+ * INIT THE SCRIPTS OF THE PAGE
+ */
+page.init();

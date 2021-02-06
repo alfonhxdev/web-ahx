@@ -16,7 +16,7 @@
                                 <h2>CAPAH</h2>
                                 <h4>Software de Escritorio</h4>
                             </article>
-                            <img src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg" alt="">
+                            <img class="lozad" data-src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg" alt="">
 
                         </a>
                     </div>
@@ -32,7 +32,7 @@
                                 <h2>Shopmex</h2>
                                 <h4>E-commerce</h4>
                             </article>
-                            <img src="{{URL::asset('/img/portafolio/cards/Project_Shopmex.png')}}" alt="">
+                            <img class="lozad" data-src="{{URL::asset('/img/portafolio/cards/Project_Shopmex.png')}}" alt="">
                         </a>
                     </div>
                     <!-- End Card Project -->
@@ -48,7 +48,7 @@
                                 <h2>Sistema de Control Escolar</h2>
                                 <h4>Sistema Web</h4>
                             </article>
-                            <img src="{{URL::asset('/img/portafolio/cards/Project_SGA.png')}}" alt="">
+                            <img class="lozad" data-src="{{URL::asset('/img/portafolio/cards/Project_SGA.png')}}" alt="">
                         </a>
                     </div>
                     <!-- End Card Project -->
@@ -63,7 +63,7 @@
                                 <h2>Reduce, Reusa, Recicla</h2>
                                 <h4>Página Web</h4>
                             </article>
-                            <img src="{{URL::asset('/img/portafolio/cards/Project_Reduce.png')}}" alt="">
+                            <img class="lozad" data-src="{{URL::asset('/img/portafolio/cards/Project_Reduce.png')}}" alt="">
                         </a>
                     </div>
                     <!-- End Card Project -->
@@ -78,7 +78,7 @@
                                 <h2>Alasar Crew</h2>
                                 <h4>Sistema Web</h4>
                             </article>
-                            <img src="{{URL::asset('/img/portafolio/cards/Project_Alasar.png')}}" alt="">
+                            <img class="lozad" data-src="{{URL::asset('/img/portafolio/cards/Project_Alasar.png')}}" alt="">
                         </a>
                     </div>
                     <!-- End Card Project -->

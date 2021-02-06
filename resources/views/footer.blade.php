@@ -4,7 +4,7 @@
             <div class="col-md-9 col-footer">
                 <div class="row">
                     <div class="col-md-6">
-                        <img id="logo" src="{{URL::asset('/img/logo/Logo_web.png')}}" alt="">
+                        <img id="logo" class="lozad" data-src="{{URL::asset('/img/logo/Logo_web.png')}}" alt="">
                     </div>
                     <div class="col-md-6 ">
                         <div class="row">
@@ -32,10 +32,10 @@
                     <h4>Menu</h4>
                 </div>
                 <div class="row">
-                    <div class="col-md-12"><a href="">Inicio</a></div>
-                    <div class="col-md-12"><a href="">Acerca de Mi</a></div>
-                    <div class="col-md-12"><a href="">Portafolio</a></div>
-                    <div class="col-md-12"><a href="">Contacto</a></div>
+                    <div class="col-md-12"><a href="#hero">Inicio</a></div>
+                    <div class="col-md-12"><a href="#aboutMe">Acerca de Mi</a></div>
+                    <div class="col-md-12"><a href="#portfolio">Portafolio</a></div>
+                    <div class="col-md-12"><a href="#contact">Contacto</a></div>
                 </div>
             </div>
 

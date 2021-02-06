@@ -1,4 +1,4 @@
-<section id="particles-js" class="hero">
+<section id="particles-js" class="hero lazy-background">
 
     <section id="hero">
         <div class="responsive-button" id="btn-menu-responsive"> <i class="fas fa-bars"></i> </div>
@@ -8,7 +8,7 @@
         </div> -->
 
         <div data-aos="fade-down" class="hero-avatar">
-            <img loading="lazy" src="https://media-exp1.licdn.com/dms/image/C5603AQGcOuCeuyddBw/profile-displayphoto-shrink_200_200/0/1603293518674?e=1614211200&v=beta&t=sO0iTqFsqq1OAlxTmRTkIuGxBYidwxvAKxBPqfPWZzI" alt="">
+            <img class="lozad" data-src="https://media-exp1.licdn.com/dms/image/C5603AQGcOuCeuyddBw/profile-displayphoto-shrink_200_200/0/1603293518674?e=1614211200&v=beta&t=sO0iTqFsqq1OAlxTmRTkIuGxBYidwxvAKxBPqfPWZzI" alt="">
         </div>
 
 
@@ -28,8 +28,8 @@
             <br>
             <div class="row">
 
-                <button  type="button" class="btn btn-hero btn-md" data-toggle="modal" data-target="#mdl_resume"> <i class="fa fa-file"></i> {{__('hero.button.cv')}}</button>
-                <button  class="btn btn-hero btn-md"> <i class="fa fa-arrow-right"></i> {{__('hero.button.portfolio')}}</button>
+                <a type="button" class="btn btn-hero btn-md" data-toggle="modal" data-target="#mdl_resume"> <i class="fa fa-file"></i> {{__('hero.button.cv')}}</a>
+                <a href="#portfolio" class="btn btn-hero btn-md"> <i class="fa fa-arrow-right"></i> {{__('hero.button.portfolio')}}</a>
 
             </div>
 
@@ -43,10 +43,10 @@
 <div data-aos="fade-right" class="social">
     <ul>
         <!-- <li><a href="" class="icon-facebook"><i class="fab fa-facebook-square"></i></a></li> -->
-        <li><a href="" class="icon-linkedin"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/alfonso-hernandez-xochipa-a500ba190" target="_blank" class="icon-linkedin"><i class="fab fa-linkedin"></i></a></li>
         <!-- <li><a href="" class="icon-instagram"><i class="fab fa-instagram"></i></a></li> -->
-        <li><a href="" class="icon-github"><i class="fab fa-github"></i></a></li>
-        <li><a href="" class="icon-mail"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://github.com/posihx" target="_blank" class="icon-github"><i class="fab fa-github"></i></a></li>
+        <li><a href="#contact" class="icon-mail"><i class="fas fa-envelope"></i></a></li>
     </ul>
 </div>
 <!-- End Social Bar  -->
@@ -60,7 +60,26 @@
         <div class="container">
             <h4>{{__('options.optionColor')}}</h4>
             <div class="container">
-
+                <ul class="chooseColor">
+                    <li data-theme="1" class="theme-1">
+                        <a></a>
+                    </li>
+                    <li data-theme="2" class="theme-2">
+                        <a></a>
+                    </li>
+                    <li data-theme="3" class="theme-3">
+                        <a></a>
+                    </li>
+                    <li data-theme="4" class="theme-4">
+                        <a></a>
+                    </li>
+                    <li data-theme="5" class="theme-5">
+                        <a></a>
+                    </li>
+                    <li data-theme="6" class="theme-6">
+                        <a></a>
+                    </li>
+                </ul>
             </div>
         </div>
         <hr />
@@ -69,7 +88,7 @@
 
             <div class="container">
                 <label class="switch-button">
-                    <input type="checkbox" cheked="checked">
+                    <input type="checkbox" @if($typeTheme==='dark' ) checked='checked' @endif>
                     <span class="slider round"></span>
                 </label>
             </div>
@@ -82,12 +101,12 @@
                 <ul class="chooseLanguage">
                     <li>
                         <a href="{{url('/locale/es')}}">
-                            <img loading="lazy" src="{{URL::asset('img/icons/lang-es.svg')}}" alt="">
+                            <img loading="lazy" class="lozad" data-src="{{URL::asset('img/icons/lang-es.svg')}}" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="{{url('/locale/en')}}">
-                            <img src="{{URL::asset('img/icons/lang-eng.svg')}}" alt="">
+                            <img class="lozad" data-src="{{URL::asset('img/icons/lang-eng.svg')}}" alt="">
                         </a>
                     </li>
                 </ul>
