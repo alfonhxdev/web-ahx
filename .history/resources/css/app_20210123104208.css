@@ -1,8 +1,0 @@
-@import "./normalize/normalize.css";
-@import "node_modules/font-awesome/css/font-awesome.css";
-@import "./devicons/devicon.min.css";
-@import "./bootstrap/bootstrap_4_5.css";
-@import "./aos/aos.css";
-/* @import "./owl-carousel/owl.carousel.scss"; */
-
-@import "./main/main.css"; /* <=== This is the main style of the page. */

@@ -1,6 +1,6 @@
 <?php
 
 return [
-    "cv.title"=>"Mi Curriculúm Vitae"
+    "cv.title"=>"My Resume"
 
 ];

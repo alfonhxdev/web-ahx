@@ -3,7 +3,10 @@
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PluginController;
+use App\Http\Controllers\PrincipalController;
+use App\Http\Controllers\ProjectController;
+use App\Models\Phrase;
+use App\Models\Project;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,29 +19,25 @@ use App\Http\Controllers\PluginController;
 |
 */
 
-
-Route::get('principal', function () {
-    $yearBase = 2018;
-    $yearsExperiencie = date('Y') - $yearBase;
-    $plugin = new PluginController();
-    return view('index', [
-        "title" => "Inicio",
-        "experience" => $yearsExperiencie,
-        "colorTheme" => $plugin->getColorTheme(),
-        "typeTheme" => $plugin->getTypeTheme(),
-    ]);
+/**
+ * ROUTES ROOT
+ */
+Route::get("/", function () {
+    return Redirect::to("principal");
 });
 
+Route::get('principal', [PrincipalController::class, 'index']);
 
+/**
+ * ROUTES LOCALE
+ */
 Route::get("locale/{locale}", function ($locale) {
     \Session::put("locale", $locale);
     return redirect()->back();
 });
 
-Route::get("/", function () {
-    return \Redirect::to("principal");
-});
+/**
+ * ROUTES PORTFOLIO
+ */
 
-
-Route::get("/portfolio/{id}", function ($id) {
-});
+Route::get("project", [ProjectController::class, "index"]);
