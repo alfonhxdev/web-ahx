@@ -13,7 +13,7 @@
                             @if ($project->active)
                                 <div data-aos="zoom-in" data-aos-duration="2000"
                                     class="col-md-4 col-lg-4 col-sm-4 col-xs-12 container-product owl-item">
-                                    <a href="{{ $project->id }}">
+                                    <a href="project/{{ $project->id }}">
                                         <div class="show-more text-center">
                                             <span><i class="fas fa-eye"></i></span>
                                         </div>
@@ -22,8 +22,7 @@
                                             <h4>{{ $project->type }}</h4>
                                         </article>
                                         <img class="lozad"
-                                            data-src="{{ URL::asset('/img/portafolio/cards/' . $project->image) }}"
-                                            alt="">
+                                            data-src="data:image/png;base64,{{$project->image }}">
                                     </a>
                                 </div>
                             @endif

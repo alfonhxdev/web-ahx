@@ -10,7 +10,6 @@ class MenuController extends Controller
     public function getMenu()
     {
         $menu = new Menu();
-        // dd($menu->first()->translate("es"));
         return $menu->all();
     }
 }

@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\PluginController;
 
-
 class ProjectController extends Controller
 {
     private $menu, $plugin;
@@ -15,17 +14,23 @@ class ProjectController extends Controller
     {
         $this->menu = new MenuController();
         $this->plugin = new PluginController();
+        $this->project = new Project();
     }
 
-    public function index()
+
+
+    public function index($id)
     {
+        $project = $this->project->where('_id', $id)->get()[0];
+
         return view(
             'index',
             array(
                 "template" => "portfolio",
-                "title" => "Proyecto",
+                "title" => "{$project->name} | hxa.dev",
                 "colorTheme" => $this->plugin->getColorTheme(),
                 "typeTheme" => $this->plugin->getTypeTheme(),
+                "project" => $project,
                 "menu" => $this->menu->getMenu()
             )
         );
@@ -35,5 +40,4 @@ class ProjectController extends Controller
     {
         return Project::all();
     }
-
 }

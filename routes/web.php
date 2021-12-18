@@ -39,5 +39,7 @@ Route::get("locale/{locale}", function ($locale) {
 /**
  * ROUTES PORTFOLIO
  */
-
-Route::get("project", [ProjectController::class, "index"]);
+Route::get("project", function () {
+    return Redirect::to("principal");
+});
+Route::get("project/{id}", [ProjectController::class, "index"]);

@@ -5,25 +5,25 @@ namespace App\Models;
 use Astrotomic\Translatable\Translatable;
 use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
-use App\Models\ProjectDetail;
+use App\Models\Project;
 
-class Project extends Eloquent implements TranslatableContract
+class ProjectDetail extends Eloquent implements TranslatableContract
 {
     use Translatable;
 
     protected $connection = 'mongodb';
-    protected $collection = 'project';
+    protected $collection = 'project_detail';
 
     protected $primaryKey = 'id';
 
-    public $translatedAttributes = ["name", "type"];
+    public $translatedAttributes = ["description", "requirements", "overview", "challenge", "solution"];
     public $translationModel;
     public $translationForeignKey;
 
     public $localeKey;
 
-    public function details()
-    {
-        return $this->hasOne(ProjectDetail::class, "_id", "project_detail_id");
-    }
+    // public function project()
+    // {
+    //     return $this->belongsToMany(Project::class,null, 'id', 'project_id');
+    // }
 }

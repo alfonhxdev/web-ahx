@@ -4,11 +4,11 @@
         <div class="responsive-button" id="btn-menu-responsive"> <i class="fas fa-bars"></i> </div>
 
         <!-- <div class="hero-logo">
-            <img src="{{URL::asset('/img/logo/Logo_web.png')}}" alt="">
+            <img src="{{URL::asset('/img/pricnipal/')}}" alt="">
         </div> -->
 
         <div data-aos="fade-down" class="hero-avatar">
-            <img class="lozad" data-src="https://media-exp1.licdn.com/dms/image/C5603AQGcOuCeuyddBw/profile-displayphoto-shrink_200_200/0/1603293518674?e=1614211200&v=beta&t=sO0iTqFsqq1OAlxTmRTkIuGxBYidwxvAKxBPqfPWZzI" alt="">
+            <img class="lozad" data-src="{{URL::asset('/img/principal/hero/avatar.jpg')}}" alt="">
         </div>
 
 

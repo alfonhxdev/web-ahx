@@ -13,7 +13,7 @@
 
             </div>
             <div data-aos="flip-right" data-aos-duration="2000" class="col-md-6 pl-6 img-content">
-                <img  class="lozad" data-src="https://images.pexels.com/photos/3201585/pexels-photo-3201585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="" alt="">
+                <img  class="lozad" data-src="{{URL::asset('/img/principal/hero/avatar.jpg')}}" class="" alt="">
             </div>
 
         </div>
