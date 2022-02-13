@@ -89,20 +89,20 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
         ],
-        'mongodb' => [
-            'driver'   => 'mongodb',
-            'host'     => 'localhost',
-            'port'     =>  27017,
-            'database' => 'web_hxa',
-            'username' => '',
-            'password' => '',
-            'options'  => []
-        ],
         // 'mongodb' => [
-        //     'driver' => 'mongodb',
-        //     'dsn' => "mongodb+srv://" . env('MONGO_DB_USERNAME') . ":".env('MONGO_DB_PASSWORD')."@".env('MONGO_DB_HOST')."/".env('MONGO_DB_DATABASE')."?ssl=true&retryWrites=true&w=majority",
-        //     'database' => 'web_hexa',
+        //     'driver'   => 'mongodb',
+        //     'host'     => 'localhost',
+        //     'port'     =>  27017,
+        //     'database' => 'web_hxa',
+        //     'username' => '',
+        //     'password' => '',
+        //     'options'  => []
         // ],
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'dsn' => "mongodb+srv://" . env('MONGO_DB_USERNAME') . ":".env('MONGO_DB_PASSWORD')."@".env('MONGO_DB_HOST')."/".env('MONGO_DB_DATABASE')."?ssl=true&retryWrites=true&w=majority",
+            'database' => 'web_hexa',
+        ],
 
     ],
 
