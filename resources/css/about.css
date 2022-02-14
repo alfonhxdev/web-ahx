@@ -6,11 +6,9 @@
     width: 100%;
     height: auto;
     background: var(--background-color-secondary);
-    background-image: linear-gradient(
-            -32deg,
+    background-image: linear-gradient(-32deg,
             var(--background-color-primary) 43%,
-            transparent 30%
-        ),
+            transparent 30%),
         linear-gradient(47deg, var(--contrast-color) 36%, transparent 27%);
 }
 
@@ -23,6 +21,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .aboutMe h1 {
     margin: 0;
     text-align: center;
@@ -38,6 +37,7 @@
     font-size: 14px;
     text-shadow: 0px 0px 10px var(--background-color-primary);
 }
+
 .aboutMe .container h1 {
     text-align: center;
     font-weight: 100;
@@ -45,12 +45,14 @@
     font-size: 35px;
     padding-bottom: 40px;
 }
+
 .aboutMe .container h3 {
     color: var(--contrast-color);
     font-weight: bold;
     font-size: 22px;
     padding-bottom: 20px;
 }
+
 .aboutMe .container h3::before {
     content: "";
     display: inline-block;
@@ -80,11 +82,13 @@
     transition: 0.5s all ease-in-out;
     font-size: 14px;
 }
+
 .aboutMe .container .list-aboutme-ol li:hover {
     background: var(--primary-color-active);
     color: var(--white-color);
     padding: 0.4em 0.4em 0.4em 1em;
 }
+
 .aboutMe .container .list-aboutme-ol li::before {
     content: "";
     display: inline-block;
@@ -114,12 +118,14 @@
     text-decoration: underline;
     color: var(--contrast-color-secondary);
 }
+
 .aboutMe .container .card-section {
     display: flex;
     flex-wrap: inherit;
     justify-content: center;
     flex-direction: row;
 }
+
 .aboutMe .container .card {
     width: 15em;
     background: var(--background-color-secondary);
@@ -139,11 +145,13 @@
     text-align: center;
     font-weight: 700;
 }
+
 .aboutMe .container .card .card-header {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
 }
+
 .aboutMe .container .card .card-header i {
     font-size: 30px;
     text-align: center;
@@ -166,8 +174,7 @@
     padding: 5px;
 }
 
-.aboutMe .container .container-timeline {
-}
+.aboutMe .container .container-timeline {}
 
 .aboutMe .container .container-timeline .timeline {
     counter-reset: year 2018;
@@ -223,4 +230,13 @@
 .aboutMe .container .container-timeline .timeline li.active::before {
     background: var(--primary-color);
     color: var(--white-color);
+}
+
+
+@media only screen and (max-width: 620px) {
+
+    #aboutMe>div {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 }

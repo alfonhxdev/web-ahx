@@ -136,14 +136,15 @@
 
 @media only screen and (max-width: 620px) {
     .hero .hero-avatar {
-        top: 50px;
+        /* top: 50px; */
+        top: 15px;
     }
     .hero .typewritting {
         width: 34%;
         /* margin: auto; */
         text-align: center;
         position: relative;
-        bottom: 69px;
+        bottom: 81px;
         margin: auto;
         right: 50px;
     }
@@ -153,7 +154,7 @@
         margin: auto;
         width: 227px;
         position: relative;
-        bottom: 50px;
+        bottom: 65px;
         left: 4px;
     }
     .hero p {
@@ -163,7 +164,7 @@
         text-align: justify;
         margin: 20px auto;
         color: var(--text-color-white);
-        bottom: 73px;
+        bottom: 10px;
         left: 10px;
     }
     .hero .typewritting h1 {
@@ -177,7 +178,7 @@
     .hero .row {
         display: block;
         position: relative;
-        bottom: 100px;
+        bottom: -80px;
         left: 5px;
     }
 }

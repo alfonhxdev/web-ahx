@@ -12,9 +12,9 @@
                 <br>
 
             </div>
-            <div data-aos="flip-right" data-aos-duration="2000" class="col-md-6 pl-6 img-content">
+            <!-- <div data-aos="flip-right" data-aos-duration="2000" class="col-md-6 pl-6 img-content">
                 <img  class="lozad" data-src="{{URL::asset('/img/principal/hero/avatar.jpg')}}" class="" alt="">
-            </div>
+            </div> -->
 
         </div>
 
@@ -28,7 +28,7 @@
                     <div class="card-section">
                         <!-- BEGIN cards section of tech skills -->
                         @foreach($services as $service)
-                            <div data-aos="flip-left" data-aos-duration="2000" class="card col-6 col-lg-3 ml-2 mr-2 mt-2 mb-2 mt-2 mb-2">
+                            <div data-aos="flip-left" data-aos-duration="2000" class="card col-12 col-lg-3 ml-2 mr-2 mt-2 mb-2 mt-2 mb-2">
                                 <div class="card-header">
                                     @foreach($service->icons as $icon)
                                         <i class="{{$icon}}"></i>

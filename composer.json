@@ -24,8 +24,8 @@
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^0.0.5",
         "mockery/mockery": "^1.4.2",
-	"nunomaduro/collision": "^5.0",
-	"phpunit/phpunit": "^9.3.3"
+        "nunomaduro/collision": "^5.0",
+        "phpunit/phpunit": "^9.3.3"
     },
     "config": {
         "optimize-autoloader": true,
@@ -62,9 +62,9 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ],
- 	"post-install-cmd": [
-     		"php artisan clear-compiled",
-     		"chmod -R 777 public/"
- 	]
+        "post-install-cmd": [
+            "php artisan clear-compiled",
+            "chmod -R 777 public/"
+        ]
     }
 }

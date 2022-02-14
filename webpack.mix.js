@@ -12,7 +12,7 @@ var LiveRealoadPlugin = require("webpack-livereload-plugin");
  |
  */
 mix.webpackConfig({
-    plugins: [new LiveRealoadPlugin()]
+    // plugins: [new LiveRealoadPlugin()]
 });
 
 mix.js("resources/js/app.js", "public/js")

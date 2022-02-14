@@ -29,7 +29,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 col-footer menu ml-4">
+                <!-- <div class="col-md-2 col-footer menu ml-4">
                     <div class="row">
                         <h4>Menu</h4>
                     </div>
@@ -38,7 +38,7 @@
                             <div class="col-md-12"><a href="#{{ $menu->link }}">{{ $menu->name }}</a></div>
                         @endforeach
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
