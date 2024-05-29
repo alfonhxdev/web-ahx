@@ -1,0 +1,92 @@
+html, body {
+	background-color: #FFFFFF;
+	color: #383838;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #383838;
+}
+section table {
+	background-color: #FFFFFF;
+}
+		::-moz-selection {
+background:#444444;
+color:#DDDDDD;
+}
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+  -webkit-box-shadow: 0 5px 15px #888;
+  box-shadow: 0 5px 15px #888;
+}
+::-moz-selection {
+	background: #444444;
+	color: #DDDDDD;
+}
+::selection {
+	background: #444444;
+	color: #DDDDDD;
+}
+a.brand {
+	background-image: url(assets/images/image_1.png);
+}
+a, a:hover, a:active {
+	color: #0000FF;
+}
+hr {
+	border-top: 1px solid #EBEBEB;
+	border-bottom: 1px solid #FFFFFF;
+}
+div.navbar-inner, .navbar .nav li ul {
+	background: #17d396;
+	color: #222222;
+}
+a.btn-navbar {
+	background: #DDDDDD;
+	color: #222222;
+}
+.navbar .nav li a {
+	color: #292929;
+	text-shadow: 1px 1px 0px #292929;
+}
+.navbar .nav li a:hover, .navbar .nav li.active a {
+	text-shadow: none;
+}
+div.navbar-inner ul {
+}
+.navbar .nav > li a {
+	color: #444444;
+}
+.navbar .nav > li a:hover, a.btn-navbar:hover {
+	background: #068e6e;
+	color: #DDDDDD;
+}
+.navbar .nav .active > a, .navbar .nav .active > a:hover, a.btn-navbar:active {
+	background-color: #068e6e;
+	color: #DDDDDD;
+}
+.navbar .nav li ul li a:hover {
+	background: #068e6e;
+	color: #DDDDDD;
+}
+.navbar .nav li ul li a:active {
+	background: #068e6e;
+	color: #DDDDDD;
+}
+.btn-primary {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#0088CC), to(#0044CC));
+	background-image: linear-gradient(top, #0088CC, #0044CC);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+	border-color: #0044CC #0044CC #bfbfbf;
+	color: #FFFFFF;
+}
+.btn-primary:hover,  .btn-primary:active,  .btn-primary.active,  .btn-primary.disabled,  .btn-primary[disabled] {
+	background-color: #0044CC;
+}
+#documenter_copyright {
+	display: block !important;
+	visibility: visible !important;
+}
+#theme_options2 img {
+  border: 1px solid #eee;
+  margin: 10px 0;
+  max-width: 100%;
+  padding: 10px;
+}
